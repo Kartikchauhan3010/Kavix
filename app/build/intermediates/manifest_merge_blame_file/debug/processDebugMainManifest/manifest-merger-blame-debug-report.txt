@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kavix.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+11-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:3:2-66
+11-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:3:19-64
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:4:2-73
+12-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:4:19-71
+13
+14    <application
+14-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:5:2-15:16
+15        android:allowBackup="false"
+15-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:5:150-177
+16        android:debuggable="true"
+17        android:extractNativeLibs="false"
+18        android:icon="@android:drawable/ic_dialog_alert"
+18-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:5:37-85
+19        android:label="Kavix"
+19-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:5:15-36
+20        android:testOnly="true"
+21        android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+21-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:5:86-149
+22        <activity
+22-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:6:3-8:14
+23            android:name="com.kavix.app.MainActivity"
+23-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:6:13-41
+24            android:exported="true" >
+24-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:6:42-65
+25            <intent-filter>
+25-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:7:4-145
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:7:19-70
+26-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:7:27-68
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:7:70-129
+28-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:7:80-127
+29            </intent-filter>
+30        </activity>
+31
+32        <receiver
+32-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:9:3-11:14
+33            android:name="com.kavix.app.SmsReceiver"
+33-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:9:13-40
+34            android:exported="true"
+34-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:9:41-64
+35            android:permission="android.permission.BROADCAST_SMS" >
+35-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:9:65-118
+36            <intent-filter>
+36-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:10:4-99
+37                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+37-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:10:19-83
+37-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:10:27-81
+38            </intent-filter>
+39        </receiver>
+40
+41        <service
+41-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:12:3-14:13
+42            android:name="com.kavix.app.NotifListener"
+42-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:12:12-41
+43            android:exported="true"
+43-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:12:42-65
+44            android:label="Kavix"
+44-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:12:66-87
+45            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+45-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:12:88-162
+46            <intent-filter>
+46-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:13:4-116
+47                <action android:name="android.service.notification.NotificationListenerService" />
+47-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:13:19-100
+47-->C:\Users\hp\Downloads\Kavix-Android-Project\Kavix\app\src\main\AndroidManifest.xml:13:27-98
+48            </intent-filter>
+49        </service>
+50    </application>
+51
+52</manifest>
